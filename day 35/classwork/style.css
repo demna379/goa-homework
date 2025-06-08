@@ -1,0 +1,32 @@
+#demna{
+    text-decoration:overline dashed red ;
+}
+/* text-decoration overline dashed red */
+
+#demna1{
+    text-decoration: underline wavy purple;
+}
+/* text-decoration underline wavy purple */
+
+#demna2{
+    text-align: justify;
+    text-decoration: line-through dashed blue;
+}
+/* text-align justify და text-decoration line-through dashed blue */
+
+/* ----------------------------------------------------------------- */
+
+#demna3{
+    text-shadow: 5px 4px green;
+}
+/* text-shadow ჰქონდეს 5px 4px green */
+
+#demna4{
+    text-shadow: 7px 50px 2348px purple;
+}
+/* 7px 50px 2348px purole */
+
+#demna5{
+    text-shadow: 90px 100px 200px brown;
+}
+/* 90px 100px 200px brown */
