@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        input::placeholder{
+            padding: 15px;
+        }
+        input{
+            height: 50px;
+            width: 280px;
+            border-radius: 4px;
+            border: 1px solid lightgray;
+        }
+
+        h1{
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+        }
+        #register{
+            width: 120px;
+            height: 35px;
+            border: none;
+            background-color: rgb(27, 103, 27);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h3>CREATE YOUR ACCOUNT</h3> 
+    <p>this is step 1</p>
+    <form>
+        <input type="email" placeholder="Email" required><br><br>
+        <input type="password" placeholder="Password" required><br><br>
+        <input type="password" placeholder="Confirm Password" required><br><br>
+        <button id="register" type="submit">next</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:  rgb(44, 44, 44) ;
+        }
+        input{
+            border: 1px solid rgb(222, 45, 45);
+            border-radius: 3px;
+            background-color: rgb(44, 44, 44);
+            padding: 4px;
+        }
+        input::placeholder{
+            font-size: smaller;
+        }
+        #long_ahh_input{
+            height: 100px;
+        }
+        #long_ahh_input::placeholder{
+            text-align: justify;
+        }
+        input[type="submit"]{
+            background-color: rgb(222, 45, 45);
+            width: 170px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="Name"><br><br>
+        <input type="email" placeholder="email"><br><br>
+        <input id="long_ahh_input" type="text" placeholder="Comment"><br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
