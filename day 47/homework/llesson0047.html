@@ -1,0 +1,39 @@
+<!-- დავალება 3 – ცენტრში გაწოდებული ელემენტები
+პირობა:
+დაალაგე ელემენტები ისე, რომ ყველა იყოს ზუსტად ცენტრში, როგორც ვერტიკალურად, ისე ჰორიზონტალურად.
+
+გამოიყენე:
+
+flex-direction: row
+
+justify-content: center
+
+align-items: center
+
+შედეგი:
+ყველა ელემენტი უნდა იდგეს გვერდიგვერდ და ზუსტად კონტეინერის შუაში. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div>demetre tavdadebuli</div>
+        <div>demetre tavdadebuli</div>
+        <div>demetre tavdadebuli</div>
+    </div>
+</body>
+</html>
