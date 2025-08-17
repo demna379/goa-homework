@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: hsl(185, 75%, 39%);
+            height: 90vh;
+            font-family: "Kumbh Sans", sans-serif;
+            font-family: "Hanken Grotesk", sans-serif;
+            background-image: url(bg-pattern-top.svg);
+            background-repeat: no-repeat;
+            background-size: 700px 700px;
+            background-position: -50px -200px;
+        }
+        .parent{
+            display: flex;
+            flex-direction: column;
+        }
+        #child1{
+            background-image: url(bg-pattern-card.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 350px;
+            height: 140px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        #child2{
+            background-color: hsl(225, 10%, 92%);
+            height: 250px;
+            width: 350px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        #child3{
+            position: relative;
+            bottom: 35px;
+            border-top: 1px solid lightgray;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        img{
+            border-radius: 50%;
+            border: 5px solid hsl(225, 10%, 92%);
+            position: relative;
+            bottom: 50px;
+            left: 125px;
+        }
+        h2{
+            text-align: center;
+            position: relative;
+            bottom: 55px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        span{
+            font-weight: 400;
+            color: hsl(227, 10%, 46%);
+            padding-left: 8px;
+        }
+        p{
+            position: relative;
+            bottom: 59px;
+            text-align: center;
+            color: hsl(227, 10%, 46%);
+        }
+        .num{
+            text-align: center;
+        }
+        .random{
+            position: relative;
+            font-size: small;
+            right: 4px;
+        }
+        .annoying_photo2{
+            position: absolute;
+            top: 235px;
+            right: 10px;
+            background-image: url(bg-pattern-bottom.svg);
+            background-size: auto;
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="annoying_photo1"></div>
+    <div class="parent">
+        <div class="child" id="child1"></div>
+        <div class="child" id="child2">
+            <img src="image-victor.jpg" alt="">
+            <h2>Victor Crest <span>26</span></h2>
+            <p>London</p>
+            <div id="child3">
+                <div class="num">
+                    <h3>80K <br><span class="random">Followers</span></h3>
+                </div>
+                <div class="num">
+                    <h3>803K <br> <span class="random">Likes</span></h3>
+                </div>
+                <div class="num">
+                    <h3>1.4K <br><span class="random">Photos</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="annoying_photo2"></div>
+</body>
+</html>

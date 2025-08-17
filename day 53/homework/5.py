@@ -7,4 +7,4 @@ def random(lstn, strs):
         if strs == 'odd' and i % 2 == 1:
             new.append(i)
     return new
-print(random([1,2,3,4], 'odd'))
+# print(random([1,2,3,4], 'odd'))
