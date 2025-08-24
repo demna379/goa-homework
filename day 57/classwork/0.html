@@ -1,0 +1,27 @@
+<!-- background-position
+👉 შექმენი 200px × 200px ყუთი და ისე დააყენე სურათი, რომ გამოჩნდეს მხოლოდ მარჯვენა ზედა კუთხეში. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        body{
+            background-image: url(image.png);
+            background-repeat: no-repeat;
+            background-position: 100% 1px;
+        }
+    </style> -->
+</head>
+<body>
+
+
+    <script>
+        let random = document.body;
+        random.style.backgroundImage = 'url(image.png)';
+        random.style.backgroundRepeat = 'no-repeat'
+        random.style.backgroundPosition = '100% 0'
+    </script>
+</body>
+</html>

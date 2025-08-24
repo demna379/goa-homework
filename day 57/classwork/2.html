@@ -1,0 +1,32 @@
+<!-- background-repeat
+👉 შექმენი 200px × 200px ყუთი და სურათი ისე დააყენე, რომ მხოლოდ ჰორიზონტალურად განმეორდეს (ზემოთ–ქვემოთ არ უნდა გამეორდეს).  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-image: url(image.png);
+            background-repeat: repeat-x;
+            background-size: contain;
+        }
+    </style> -->
+</head>
+<body>
+    <div id="random"></div>
+
+    <script>
+        let random = document.getElementById('random');
+        random.style.height = '200px'
+        random.style.width = '200px'
+        random.style.backgroundImage = 'url(image.png)'
+        random.style.backgroundRepeat = 'repeat-x'
+        random.style.backgroundSize = 'contain'
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!-- background-size
+👉 შექმენი 200px × 200px ყუთი და სურათი ისე დააყენე, რომ მთელი ყუთი დაფაროს, მაშინაც თუ ფოტოს ნაწილი მოიჭრება.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        div{
+            background-image: url(image.png);
+            background-size: cover;
+            height: 200px;
+            width: 200px;
+        }
+    </style> -->
+</head>
+<body>
+    <div id="random"></div>
+    <script>
+        let random = document.getElementById('random');
+        random.style.backgroundImage = 'url(image.png)'
+        random.style.backgroundSize = 'cover'
+        random.style.height = '200px'
+        random.style.width = '200px'
+    </script>
+</body>
+</html>
