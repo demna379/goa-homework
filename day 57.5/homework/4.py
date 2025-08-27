@@ -1,0 +1,2 @@
+# 5)კომენტარების სახით ახსენით რა დროს ვიყენებთ lambda ს და რა დროს ვიყენებთ def ს
+# chven viyenebt lambdas roca patara da advili funqciis sheqmna gvchirdeba ad defs viyenebt mashin roca ufro meti kodis wera gviwevs
