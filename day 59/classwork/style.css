@@ -1,0 +1,45 @@
+.car{
+    background-image: url(image.png);
+    width: 550px;
+    height: 282px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 500px;
+    top: 100px;
+}
+.wheel1, .wheel2{
+    background-image: url(image_copy-removebg-preview.png);
+    width: 170px;
+    height: 170px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+.wheel1{
+    position: relative;
+    left: 500px;
+    top: 223px;
+}
+.wheel2{
+    position: relative;
+    left: 855px;
+    top: 55px;
+}
+#random{
+    transition: 1s;
+    width: 100px;
+    height: 20px;
+}
+#random:hover{
+    transition: 4s;
+    .wheel2{
+        transition: 50s;
+        transform: rotate(99999deg);
+    }
+    .wheel1{
+        transition: 50s;
+        transform: rotate(99999deg);
+    }
+    transform: translate(-500px,0);
+}
