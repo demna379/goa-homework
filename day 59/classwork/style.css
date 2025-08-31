@@ -5,7 +5,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    left: 500px;
+    left: 900px;
     top: 100px;
 }
 .wheel1, .wheel2{
@@ -18,12 +18,12 @@
 }
 .wheel1{
     position: relative;
-    left: 500px;
+    left: 900px;
     top: 223px;
 }
 .wheel2{
     position: relative;
-    left: 855px;
+    left: 1255px;
     top: 55px;
 }
 #random{
@@ -32,14 +32,14 @@
     height: 20px;
 }
 #random:hover{
-    transition: 4s;
+    transition: 5s;
     .wheel2{
-        transition: 50s;
-        transform: rotate(99999deg);
+        transition: 5s;
+        transform: rotate(-2000deg);
     }
     .wheel1{
-        transition: 50s;
-        transform: rotate(99999deg);
+        transition: 5s;
+        transform: rotate(-2000deg);
     }
-    transform: translate(-500px,0);
+    transform: translate(-900px,0);
 }
