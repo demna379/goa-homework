@@ -1,0 +1,70 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.parent{
+    width: 1064px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+#random{
+    width: 85px;
+    height: 25px;
+    position: relative;
+    right: 90px;
+    top: 10px;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    width: 423px;
+    p{
+        font-weight: 600;
+    }
+}
+.second{
+    width: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+.images{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 10px;
+}
+#dumbAhhImage{
+    width: 23px;
+    height: 21px;
+    position: relative;
+    top: 17px;
+}
+.section_one{
+    width: 100%;
+    height: 554px;
+    display: flex;
+    justify-content: center;
+    background-color: #F0EFEB;
+}
+#sec_1_div_1{
+    transform: scale(1.4);
+    position: relative;
+    top: 150px;
+    button{
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        height: 25px;
+        width: 90px;
+    }
+}
+#sec_1_div_2{
+    position: relative;
+    left: 110px;
+}
