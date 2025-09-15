@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+}
+img{
+    animation-name: random;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+}
+@keyframes random{
+    40%{
+        transform: translate(0, 340px);
+        height: 170px;
+        width: 300px;
+    }
+}

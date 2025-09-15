@@ -1,0 +1,35 @@
+body{
+    overflow: hidden;
+    font-family: "Dancing Script", cursive;
+    background-color: black;
+}
+
+.crate{
+    text-align: center;
+    position: relative;
+    top: 200px;
+    p{
+        transform: scale(18);    
+        animation-name: random;
+        animation-duration: 0.1ms;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes random{
+    10%{
+        transform: scale(20);
+        margin: 0;
+    }
+    20%{
+        transform: scale(19);
+        margin: 0;
+    }
+    30%{
+        transform: scale(23.5);
+        margin: 0;
+    }
+    100%{
+        margin: 0;
+    }
+}
