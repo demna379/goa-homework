@@ -56,9 +56,8 @@ header{
     opacity: 0.2;
     background-color: #F0EFEB;
     animation-name: sec_1_animation;
-    animation-timing-function: ease-in-out;
-    animation-duration: 0.7s;
-    animation-fill-mode:both;
+    animation-duration: 1.2s;
+    animation-fill-mode:forwards;
 }
 #sec_1_div_1{
     transform: scale(1.4);
@@ -79,7 +78,7 @@ header{
 }
 @keyframes sec_1_animation{
     100%{
-        right: -5px;
+        right: 0;
         opacity: 1;
     }
 }
