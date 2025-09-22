@@ -1,0 +1,137 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.parent{
+    width: 1064px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+#random{
+    width: 85px;
+    height: 25px;
+    position: relative;
+    right: 90px;
+    top: 10px;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    width: 423px;
+    p{
+        font-weight: 600;
+    }
+}
+.second{
+    width: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+.images{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 10px;
+}
+#dumbAhhImage{
+    width: 23px;
+    height: 21px;
+    position: relative;
+    top: 17px;
+}
+.section_one{
+    width: 100%;
+    height: 554px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* right: 500px; */
+    /* opacity: 0.2; */
+    background-color: #F0EFEB;
+    /* animation-name: sec_1_animation; */
+    /* animation-duration: 1.2s; */
+    /* animation-fill-mode:forwards; */
+}
+#sec_1_div_1{
+    transform: scale(1.4);
+    position: relative;
+    top: 150px;
+    button{
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        height: 25px;
+        width: 90px;
+    }
+}
+#sec_1_div_2{
+    position: relative;
+    left: 110px;
+}
+/* @keyframes sec_1_animation{
+    100%{
+        right: 0;
+        opacity: 1;
+    }
+} */
+
+
+/* section two */
+.eh{
+    display: flex;
+}
+.section_two{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.sec_2_div1{
+    h1{
+        padding: 25px 0;
+    }
+    p{
+        padding: 10px 0;
+    }
+}
+.sec_2_div2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        padding-bottom: 15px;
+    }
+    img{
+        width: 314px;
+        margin: 0;
+        padding: 0 35px;
+    }
+}
+.eh1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    p{
+        font-weight: 700;
+        padding-top: 10px;
+    }
+    button{
+        text-decoration: underline;
+        border: none;
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 15px;
+    }
+}
