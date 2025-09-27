@@ -1,0 +1,35 @@
+<!-- 2)შექმენით ანიმააცია, keyframe, შემდეგ დივი, მიეცით ჯერ მარტო width height bg,  და როცა კერანის ზომა გახდება 400 პიქსელი ეს ანიმაცია ამ დივზე ამუშავდეს -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #second{
+            width: 100px;
+            background-color: red;
+            height: 100px;
+        }   
+
+        @keyframes random{
+            100%{
+                background-color: blue;
+            }
+        }
+
+        @media(max-width:400px){
+            #second{
+                animation-name: random;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="second">
+
+    </div>
+</body>
+</html>
