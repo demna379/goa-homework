@@ -1,0 +1,1 @@
+# moduli gvaq shesaqmneli amitom sxva repo shevqmeni amistvis. 
