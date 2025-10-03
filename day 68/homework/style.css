@@ -1,0 +1,49 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+.section_five{
+    display: flex;
+    flex-direction: column;
+}
+.waste_of_time{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 50px;
+}   
+.aqua_ball{
+    background-color: #21f7ec;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.brows_i_guess{
+    background-color: #d38f62;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.blue_one{
+    background-color: #33d3bc;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.red_one{
+    background-color: #f94c43;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.another_vlue{
+    background-color: #18a5c6;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.whatever_color{
+    background-color: #d399ff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
