@@ -1,0 +1,54 @@
+<!-- 4)შექმენით 4 ღილაკი ისრებით ქვემოთ ზემოთ მარცხნივ მარჯნივ, და ააასვე ერთი დივი, შემდეგ მაგ ისრებით უნდა შეგეძლოთ მართოთ ეს დივი -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50vh;
+            flex-direction: column;
+        }
+        #box{
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+            position: relative;
+        }
+        .arrows{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <div class="arrows">
+        <div style="display: flex; gap: 50px;">
+            <h1 id="lefts">0</h1> <h1>||</h1> <h1 id="ups">0</h1>
+        </div>
+        <div>
+            <button id="left"><--</button>
+    
+            <button id="right">--></button>
+    
+            <button id="down">
+                |<br>
+                |<br>
+                \/
+            </button>
+    
+            <button id="up">
+                /\<br>
+                |<br>
+                |
+            </button>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
