@@ -29,6 +29,9 @@ main{
     border-radius: var(--border_lol);
     padding: var(--border_lol);
 }
+section{
+    width: var(--percent);
+}
 .first{
     width: var(--percent);
     #h1{
@@ -42,7 +45,37 @@ main{
         font-size: clamp(1rem, 1.5vw, 1.2rem);
     }
 }
+.first ul span{
+    color: var(--Stone_900);
+}
+.sec_div h1{
+    color: var(--Brown_800);
+}
+.second h1{
+    color: var(--Brown_800);
+}
 img{
     width: 95%;
     border-radius: var(--border_lol);
+}
+.first, .second{
+    border-bottom: 1px solid var(--Stone_150);
+}
+.third h1{
+    color: var(--Brown_800);    
+}
+.random{
+    border-bottom: 1px solid var(--Stone_150);
+    display: flex;
+    gap: 25vw;
+    p{
+        width: 10%;
+    }
+}
+.not_random{
+    display: flex;
+    gap: 25vw;
+    p{
+        width: 10%;
+    }
 }
