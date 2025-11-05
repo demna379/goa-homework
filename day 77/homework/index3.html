@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+    --random_border: 1px solid white;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    margin: 0 0 15px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: var(--random_border);
+}
+main{
+    width: 100%;
+}
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.parent1{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+#counter{
+    text-align: center;
+    font-size: 60px;
+    transform: scale(1.6);
+}
+.child1, .child2{
+    border: var(--random_border);
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+input, button{
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(37, 36, 36);
+    text-align: center;
+    color: white;
+}
+button{
+    font-size: large;
+}
+section{
+    border-bottom: var(--random_border);
+    padding: 20px;
+}
+#background_changer{
+    margin-top: 10px;
+    width: 400px;
+    height: 150px;
+    color: rgb(red, green, blue);
+}
+#r,#g,#b{
+    width: 120px;
+    border: none;
+}
+#random_rgb_h1{
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+#resets{
+    position: relative;
+    left: 100px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>these are random programs i made</h1>
+    </header>
+    <main>
+        <section class="R-N-G">
+            <h1>generate a random number between two numbers</h1>
+            <div class="parent1">
+                <div class="child1">
+                    <h3>how this works:</h3>
+                    <ul>
+                        <li>You enter a number</li>
+                        <li>
+                            And the program <br>chooses a number <br>between [num:num] <br>
+                            first and second number.
+                        </li>
+                    </ul>
+                </div>
+                <div class="child2">
+                    <form>
+                        <input type="number" name="" id="num1" placeholder="Enter a first number"><br><br>
+                        <input type="number" name="" id="num2" placeholder="Enter a second nunmber"><br><br>
+                    </form>
+                    <button id="submit">roll</button>
+                    <h3>Answer: <span id="placeholder"></span></h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculator">
+            <h1>The calculator</h1>
+            <div class="parent1">
+                <div class="child1">
+                    <h3>works like a basic calculator:</h3>
+                    <ul>
+                        <li>
+                            You enter a first number, <br>then a second number 
+                            <br>after that you choose an <br>operator.
+                        </li>
+                        <li>And after submiting you will <br>get an answer.</li>
+                    </ul>
+                </div>
+                <div class="child2">
+                    <form>
+                        <input type="number" name="" id="calc-num1" placeholder="Enter a first number"><br><br>
+                        <input type="number" name="" id="calc-num2" placeholder="Enter a second number"><br><br>
+                        <input type="text" name="" id="opp" placeholder="Enter an operator (+; - etc..)"><br><br>
+                    </form>
+                    <button id="calc_submit">submit</button>
+                    <h3>Answer: <span id="calc_placeholder"></span></h3>
+                </div>
+            </div>
+        </section>
+        <section class="increas">
+            <h1>increase and decrease</h1>
+            <div class="parent1">
+                <div class="child1">
+                    <h1 id="counter">0</h1>
+                    <button id="increase">increase</button>
+                    <button id="reset">reset</button>
+                    <button id="decrease">decrease</button>
+                </div>
+            </div>
+        </section>
+        <section class="RGB_changer">
+            <h1>background color changer</h1>
+            <p>inputs above 255 will be registered as 255.</p>
+            <h1>rgb(<input type="number" name="" id="r" min="0" max="255" placeholder="red">,
+                <input type="number" name="" id="g" min="0" max="255" placeholder="green">,
+                <input type="number" name="" id="b" min="0" max="255" placeholder="blue"> )
+            </h1>
+            <div class="child2" id="background_changer">
+                <h1 id="random_rgb_h1"></h1>
+            </div>
+            <div>
+                <button id="changer">change color</button>
+                <button id="random_rgb">pick random color</button><br><br>
+                <h3 style="text-align: center;">buttons below will make this box <br> have different colors every second (i think :/)</h3>
+                <button id="start">start</button>
+                <button id="stop">stop</button><br><br>
+                <button id="resets">reset</button>
+            </div>
+        </section>
+    </main>
+    <script src="3.js"></script>
+</body>
+</html>
