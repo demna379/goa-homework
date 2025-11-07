@@ -5,38 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #random{
-            width: 150px;
-            height: 150px;
-            background-color: pink;
-            position: relative;
-            z-index: 50;
-        }
-        #random2{
-            width: 150px;
-            height: 150px;
-            background-color: pink;
-            position: relative;
-            z-index: 50;
-        }
-        button{
-            z-index: 100;
+        *{
+            margin: 0;
+            padding: 0;
         }
         body{
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
-            flex-direction: column;
             overflow: hidden;
+            background: #FFDBED;
+            background: linear-gradient(180deg, rgba(255, 219, 237, 1) 39%, rgba(255, 105, 180, 1) 100%);
+            font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        img{
+            transform: scale(1);
+            position: absolute;
+            bottom: -450px;
+            animation-name: random;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            z-index: -10;
+        }
+        @keyframes random{
+            100%{
+                bottom: 650px;
+                opacity: 0;
+            }
+        }
+        #random{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+            border: 3px solid black;
+            width: 350px;
+            background-color: #FFC0CB;
+            height: 100px;
+            gap: 20px;
+            position: relative;
+            transition: 0.3s;
+        }
+        #random2{
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+            border: 5px solid black;
+            width: 350px;
+            background-color: #FFC0CB;
+            height: 100px;
+            gap: 20px;
+        }
+        #ehh{
+            display: flex;
+            gap: 20px;
+        }
+        button{
+            width: 70px;
+            font-size: 20px;
+            background-color: rgb(255, 217, 224);
+            border: none;
+            border-radius: 30px;
         }
     </style>
 </head>
 <body>
-    <div id="random"><h1>do you love me?</h1></div>
-    <div style="display: none;" id="random2"><h1>i thought so :)</h1></div>
-    <button id="yes">yes</button>
-    <button id="no">no</button>
+    <div id="random">
+        <h1>do you love me?</h1>
+        <div id="ehh">
+            <button id="yes">yes</button>
+            <button id="no">no</button>
+        </div>
+    </div>
+
+    <div id="random2"><h1>i thought so</h1></div>
+
+    <!-- heart pop up -->
+    <img src="image_copy-removebg-preview.png" alt="" id="img">
     <script src="4.js"></script>
+    <!-- heart pop up -->
 </body>
 </html>
