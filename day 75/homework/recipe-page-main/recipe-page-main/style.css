@@ -71,6 +71,9 @@ img{
     p{
         width: 10%;
     }
+    span{
+        text-align: center;
+    }
 }
 .not_random{
     display: flex;
