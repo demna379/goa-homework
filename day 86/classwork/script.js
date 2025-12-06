@@ -33,7 +33,4 @@ setInterval(function(){
     second.textContent = hourse
     third.textContent = minutes
     forth.textContent = seconds
-    if (hourse == 0 && minutes == 59 && seconds == 59){
-        count --
-    }
 },1)
