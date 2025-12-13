@@ -1,0 +1,39 @@
+<!-- შექმენით საიტი სადაც გექნებათ 1 ცალი input, რომელში ტექსტის ჩაწერის დროსაც გაეშვება logFive ფუნქცია, რომელიც კონსოლში გამოიტანს ამ input-ის value-ს.
+
+bonus:
+საიტზე დაამატეთ ღილაკი და ფოტოც, ღილაკზე დაჭერის დროს კი ფოტო შეიცვალოს -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="demna">
+    <br><br><br>
+    <button id="button">demetre tavdadebuli</button>
+    <br><br><br>
+    <img src="" alt="" id="img">
+
+    <script>
+        const input = document.getElementById('demna')
+        const btn = document.getElementById('button')
+        const image = document.getElementById("img")
+        input.onchange = function logfive(){
+            console.log(input.value)
+        }
+        let uh = [
+            'image copy.png',
+            'image.png',
+            'image copy 2.png'
+        ]
+        let count = 0
+        btn.onclick = () => {
+            image.src = uh[count%3]
+            count++ 
+        }
+        yiyliyo
+    </script>
+</body>
+</html>
