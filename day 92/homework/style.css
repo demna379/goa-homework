@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-weight: 100;
+    color: white;
+    background-image: url(image.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: scale(1.5);
+}
+
+div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+div :nth-child(2) {
+    color: white;
+}
+
+div :nth-child(3) {
+    color: red;
+}
+
+.inp {
+    border-radius: 5px;
+    border: 1px solid grey;
+    height: 35px;
+    width: 100%;
+    outline: none;
+}
+
+#sub {
+    background-color: #0e64d1;
+    color: white;
+    font-weight: 600;
+
+    border: none;
+    width: 100%;
+}
