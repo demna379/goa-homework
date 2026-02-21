@@ -1,36 +1,80 @@
-const main = document.querySelector('#main') // get all products
-const uhh = document.getElementById('uhh') // header div
-const adds = document.querySelectorAll('.add')  // buttons
-const cart_btn = document.getElementById('btn') // cart button
-const cart_box = document.getElementById('cart_box') // cart box
-const product = document.querySelectorAll('.product') // products
-const amount = document.getElementById("amount") // amount paragraph
-const images = document.querySelectorAll('img')
-let bool = true
-let sum = 0
-for (let i = 0; i < adds.length; i++){ // add product to cart box
-    adds[i].addEventListener('click',() => {
-        cart_box.appendChild(product[i].cloneNode(true))
-        sum++
-        amount.textContent = sum
-        
-    })
-}
-cart_btn.addEventListener('click',() => {
-    if (bool == true){
-        cart_box.style.transform = 'translate(0px)'
-        uhh.style.width = '50%'
-        main.style.transform = 'translate(-200px)'
-        bool = false
-    }
-    else if (bool == false){
-        cart_box.style.transform = 'translate(300px)'
-        main.style.transform = 'translate(0px)'
-        uhh.style.width = '100%'
-        bool = true
-    }
+let cart = document.getElementById("cover")
+let shopping = document.getElementById("shopping")
+let cancel = document.getElementById("cancel")
+let card = document.getElementsByClassName("card")
+let add = document.getElementById("add")
+let main = document.getElementsByTagName("main")[0]
+let notification = document.getElementById('mes-counter')
+let counter = 0
+
+cart.addEventListener("click", function(){
+    shopping.style.transform = "translate(0px)"
+    main.style.marginRight = "150px"
+    notification.style.display = 'none'
+    counter = 0
+}) 
+
+cancel.addEventListener("click", function(){
+    shopping.style.transform = "translate(270px)"
+    main.style.marginRight = "0px"
 })
-for (let i of images){
-    i.src = 'image.png'
-    console.log(i)
+
+let Amount = document.getElementById("Amount")
+let amount = 0
+
+let Total = document.getElementById("Total")
+let total = 0
+
+for (let element of card) {
+    let btn = element.querySelector(".btn")
+    btn.addEventListener("click", function(){
+      counter++
+      notification.textContent = counter
+      notification.style.display = 'flex'
+    
+      let Price = element.querySelector("span").textContent.replace("$", "")
+      let pcimage = element.querySelector("img").cloneNode(true)
+      let div = document.createElement("div")
+      let btn = document.createElement("button")
+      let p = document.createElement("p")
+      let pcname = element.querySelector("b").cloneNode(true)
+      
+      btn.textContent = "Delete"
+      btn.class = "btna"
+      p.class = "pcprice"
+      div.class = "divunia"
+      pcimage.class = "pcimage"
+      p.textContent = Price
+
+      div.appendChild(pcimage)
+      div.appendChild(p)
+      div.appendChild(pcname)
+      div.appendChild(btn)
+      add.appendChild(div)
+
+      div.style.display = "flex"
+      div.style.justifyContent = "center"
+      div.style.alignItems = "center"
+      div.style.flexDirection = "column"
+      btn.style.backgroundColor = "black"
+      btn.style.color = "white"
+      btn.style.padding = "10px"
+      btn.style.border = "none"
+      btn.style.borderRadius = "8px"
+      btn.style.cursor = "pointer"
+      div.style.gap = "10px"
+
+      amount++
+      Amount.textContent = amount
+      total += Number(Price)
+      Total.textContent = total
+
+      btn.addEventListener("click", function() {
+        div.remove()
+        total -= Number(Price)
+        Total.textContent = total
+        amount--
+        Amount.textContent = amount
+      })
+    })
 }
