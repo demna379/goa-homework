@@ -135,7 +135,7 @@ class ShoppingCart{
     }
 
     removeitem(item2){
-        this.item.pop(item2)
+        this.item.splice(this.item.indexOf(item2),1)
     }
 
     gettotalitems(){
