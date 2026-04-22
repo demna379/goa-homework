@@ -183,3 +183,10 @@ class timer{
 
 let random = new timer(10)
 random.start()
+
+// let randoms = setInterval(() => {
+//     if (random.time <= 0){
+//         random.stop()
+//         clearInterval(randoms)
+//     }
+// }, 1);
