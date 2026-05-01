@@ -20,7 +20,7 @@ submit.addEventListener('click', () => {
     let input = document.getElementById('input').value.toLowerCase()
     response.then(item => {
         item.map(item => {
-            if (item.title.toLowerCase().split(0,input.length) == input || item.id == input){
+            if (item.title.toLowerCase().slice(0,input.length) == input || item.id == input){
                 result.textContent = item.description
                 console.log('bruh')
             }
