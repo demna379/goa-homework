@@ -49,15 +49,29 @@ const API_KEY = '64dfe94a32474c07b45103424260905'
 const submit = document.getElementById('submit')
 
 const temperature = document.getElementById('temperature')
+const Feels = document.getElementById('Feels')
+const humidity_percent = document.getElementById('humidity_percent')
+const wind_speed = document.getElementById('wind_speed')
+const pressure_number = document.getElementById('pressure_number')
+const UV_number = document.getElementById('UV_number')
 
-submit.addEventListener('click', () => {
+const picture = document.getElementById('picture')
+const namess = document.getElementById('namess')
+
+submit.addEventListener('click', async () => {
     let input = document.getElementById('input').value
-    async function name() {
-        let result = await (await fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${input}&aqi=yes `)).json()
-        temperature.textContent = result.current.temp_f 
-        console.log(result.current)
-    }
-    name()
+    let result = await (await fetch(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${input}&aqi=yes `)).json()
+    temperature.textContent = result.current.temp_f +'°F'
+    Feels.textContent = result.current.feelslike_c +'°C'
+    humidity_percent.textContent = result.current.humidity + '%'
+    wind_speed.textContent = result.current.wind_kph + 'km/h'
+    pressure_number.textContent = result.current.pressure_mb + 'hPa'
+    UV_number.textContent = result.current.uv
+
+    picture.src = result.current.condition.icon
+    namess.textContent = result.current.condition.text
+
+    console.log(result)
 })
 
 // air_quality
