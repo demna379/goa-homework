@@ -1,0 +1,5 @@
+დაჰოსთეთ თქვენი weather app onrender ზე და ახსენით რა არის env variable ები
+
+weather app repository aris dahostili.
+
+.env variable aris faili romelic saitis dahstvisas useri ver miwvdeba mas. `
