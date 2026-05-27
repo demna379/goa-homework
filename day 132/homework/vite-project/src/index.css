@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f3eae3;
+}
+
+#parent{
+    width: 600px;
+    height: 400px;   
+    display: flex;
+}
+
+#first,#second{
+    width: 50%;
+    height: 100%;
+}
+
+#first{
+    background-image: url('./image-product-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+#second{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+}
+
+#perfume{
+    color: grey;
+}
+
+#random-text{
+    font-size: 40px;
+}
+
+#another{
+    color: grey;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+#prices{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#price{
+    color: green;
+}
+
+#underlined{
+    text-decoration: line-through;
+}
+
+#button{
+    background-color: green;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
