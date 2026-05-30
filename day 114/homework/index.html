@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger 🍔</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+            overflow-x: hidden;
+        }
+        header{
+            background-color: orange;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #fit{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        img{
+            display: none;
+            transform: scale(1.2);
+        }
+        #notfit{
+            position: absolute;
+            right: 0;
+            background-color: orange;
+            transform: translate(250px,10px);
+        }
+        @media (max-width: 861px) {
+            img{
+                display: block;
+            }
+            #fit{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Burgers</h1>
+        <div id="fit">
+            <h2>burger</h2>
+            <h2>cheese burger</h2>
+            <h2>hamburger</h2>
+            <h2>chicken nuggers</h2>
+        </div>
+        <div id="notfit">
+            <h2>burger</h2>
+            <h2>cheese burger</h2>
+            <h2>hamburger</h2>
+            <h2>chicken nuggers</h2>
+        </div>
+        <img id="image" src="menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+    </header>
+    <script src="script.js"></script>
+</body>
+
+</html>
