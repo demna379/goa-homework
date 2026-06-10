@@ -85,7 +85,7 @@ function App() {
           </div>
         </div>
 
-        <div className="bg-[#f1c75b] bg-[url('./icon-seld-care.svg')] rounded-[10px] bg-no-repeat bg-position-[right_-10px] text-[white]">
+        <div className="bg-[#f1c75b] bg-[url('./icon-self-care.svg')] rounded-[10px] bg-no-repeat bg-position-[right_-10px] text-[white]">
           <div className="bg-[#1d204b] rounded-[10px] relative h-[80%] top-[20%] p-[20px] flex flex-col gap-[20px]">
             <div className="flex justify-between items-center">
               <p className="text-[20px]">Self care</p>
