@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+#root{
+  min-height: 100vh;
+  background-image: linear-gradient(120deg, #414141 45%, #1e1e1e 70%);
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
